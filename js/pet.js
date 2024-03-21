@@ -5,6 +5,7 @@ var y = 0;
 var startX = 0;
 var startY = 0;
 var leaveGround = 0;
+var leaveHeight = 0;
 var pet_down = 0 ;
 var inertia_startX = 0;
 var inertia_startY = 0;
@@ -43,6 +44,7 @@ pet.addEventListener("touchend", function () {
     leaveGround = 1;
     inertia_x_x = inertia_x;
     inertia_y_y = inertia_y;
+    leaveHeight = window.innerHeight - (pet.offsetTop - window.pageYOffset) - pet.offsetHeight;
 });
 //state
 var direction = 1;
@@ -91,8 +93,10 @@ function sum(){
     else{
         if(leaveGround==1){
             leaveGround = 0;
+            if(leaveHeight>600 || inertia_x_x>50 || inertia_x_x<-50 || inertia_y_y>50){
+                action_state = "fall";
+            }
             state=0;
-            action_state = "fall";
         }
         if(action_state=="stand"){
             if(direction==1){
