@@ -9,6 +9,7 @@
     position: relative;
     left:28%;
     width:44%;
+    margin-bottom:150px;
     color: #fff;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
