@@ -65,6 +65,9 @@ img{
 #image_1{
     background-image: linear-gradient(to top left, #55B9E9 , #9FFFFF);
 }
+#image_2{
+    background-image: linear-gradient(to top left, #450C3D , #EB9494);
+}
 
 /*pet*/
 :root{
