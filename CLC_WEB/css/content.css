@@ -1,0 +1,113 @@
+#content_div{
+    position:absolute;
+    top:-200px;
+    left:0;
+    width:100%;
+}
+
+.content{
+    position: relative;
+    left:28%;
+    width:44%;
+    margin-bottom:150px;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.content div{
+    position: absolute;
+    top:-10px;
+    left:-10px;
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    transition: 0.6s;
+}
+
+.content img{
+    position: relative;
+    float: right;
+    top:-100px;
+    right:-25px;
+    width:250px;
+    height:width;
+    border-radius: 25px;
+    animation: animate 2s ease-in-out infinite;
+    transition: 0.7s;
+}
+
+.content h2{
+    position: relative;
+    left:50px;
+    font-size: 4em;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.content p{
+    position: relative;
+    left:50px;
+    font-size: 2em;
+    margin-top: -50px;
+    line-height: 2em;
+}
+
+.content a{
+    position: relative;
+    left:50px;
+    display: inline-block;
+    font-size: 2em;
+    color: #111;
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 700;
+    margin-top: -25px;
+    margin-bottom: 25px;
+    transition: 0.6s;
+}
+
+.content:hover{
+    left:26%;
+    width:48%;
+    border-radius: 50px;
+}
+
+.content:hover div{
+    top:-25px;
+    left:10px;
+    width:350px;
+    height:75px;
+    border-radius: 15px;
+}
+
+.content:hover img{
+    top:-50px;
+    right:-10px;
+    width:300px;
+    height:width;
+    border-radius: 30px;
+}
+
+.content a:hover{
+    background: #222;
+    color: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 15px #222;
+}
+
+@keyframes animate {
+    0%,
+    100%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translate(-10px);
+    }
+}
