@@ -1,1 +1,153 @@
+/*body*/
+body{
+    background-color:#100602;
+}
+img{
+    pointer-events:none;
+}
 
+#about{
+    position:absolute;
+    top:100px;
+    left:-150px;
+    width:300px;
+    //height:150px;
+    z-index:1;
+    transition: 0.6s;
+}
+#about #button{
+    position:absolute;
+    top:0;
+    left:150px;
+    width:150px;
+    height:150px;
+    background-color:#222;
+    border-radius:0px 75px 75px 0px;
+}
+#about #content{
+    position:absolute;
+    top:0;
+    left:0;
+    width:150px;
+    //height:150px;
+    background-color:#222;
+    border-radius:0px 0px 75px 0px;
+}
+#about .icon{
+    position:relative;
+    font-size:100px;
+    margin-top:25px;
+    margin-right:25px;
+    margin-bottom:25px;
+    left:25px;
+    color:fff;
+}
+#about button{
+    border:none;
+    background-color:transparent;
+}
+
+#about:hover{
+    left:0;
+}
+
+#web{
+    overflow-x:hidden;
+    overflow-y:auto;
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+    background-color:#100602;
+}
+
+#top{
+    position:absolute;
+    top:0%;
+    left:0%;
+    width:100%;
+}
+#top_img{
+    position:relative;
+    top:0%;
+    left:-25%;
+    width:150%;
+    //filter: blur(5px);
+}
+#background{
+    position:absolute;
+    top:1000px;
+    left:-50%;
+    width:200%;
+    height:2100px;
+    background-color:#100602;
+    box-shadow: 0px -250px 100px #100602;
+}
+#content_background{
+    position:absolute;
+    top:-350px;
+    left:30%;
+    width:40%;
+    height:100%;
+    //border: 2px solid #000;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 0 50px #2B7873;
+    border-radius:50px;
+}
+#title_div{
+    position:absolute;
+    top:-500px;
+    left:50%;
+}
+#title{
+    position:relative;
+    top:0%;
+    left:-40%;
+    width:80%;
+}
+
+/*image*/
+#image_1{
+    background-image: linear-gradient(to top left, #6D2B0E , #FDFE89);
+}
+#image_2{
+    background-image: linear-gradient(to top left, #A6D7F4 , #E4F3FC);
+}
+#image_3{
+    background-image: linear-gradient(to top left, #6E2151 , #DE5D70);
+}
+#image_4{
+    background-image: linear-gradient(to top left, #473A60 , #BF566D);
+}
+#image_5{
+    background-image: linear-gradient(to top left, #05050B , #2B2A54);
+}
+
+/*pet*/
+:root{
+    --pet_img_x:0px;
+    --pet_img_y:0px;
+}
+#pet_div{
+    position:fixed;
+    top:0%;
+    left:0%;
+    width:100%;
+    height:100%;
+}
+#pet{
+    overflow:hidden;
+    position:fixed;
+    bottom:0%;
+    left:0%;
+    width:400px;
+    height:400px;
+}
+#pet_img{
+    position:relative;
+    top:var(--pet_img_y);
+    left:var(--pet_img_x);
+    width:1600px;
+    height:2000px;
+}
