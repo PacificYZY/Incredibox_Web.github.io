@@ -80,7 +80,7 @@ img{
     top:1000px;
     left:-50%;
     width:200%;
-    height:1000px;
+    height:1250px;
     background-color:#091A26;
     box-shadow: 0px -250px 100px #091A26;
 }
@@ -114,6 +114,9 @@ img{
 #image_2{
     background-image: linear-gradient(to top left, #450C3D , #EB9494);
 }
+#image_3{
+    background-image: linear-gradient(to top left, #0E0D33 , #4553C7);
+}
 
 /*pet*/
 :root{
@@ -121,7 +124,7 @@ img{
     --pet_img_y:0px;
 }
 #pet_div{
-    position:absolute;
+    position:fixed;
     top:0%;
     left:0%;
     width:100%;
